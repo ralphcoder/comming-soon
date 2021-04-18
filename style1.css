@@ -1,0 +1,82 @@
+html,
+body {
+
+  width: 100%;
+  height: 100%;
+}
+
+
+h2 {
+
+  font-family: 'Sigmar One', sans-serif;
+  font-size: 12vw;
+  position: absolute;
+  top:395px;
+  left:190px;
+  line-height:3;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #000000;
+  letter-spacing: .9rem;
+}
+h2:before {
+  content: attr(data-heading);
+  position: absolute;
+  overflow: hidden;
+  color: #ffcc00;
+  width: 100%;
+  z-index: 5;
+  text-shadow: none;
+  left: 27%;
+  text-align: left;
+  -webkit-animation: flicker 6s linear infinite;
+          animation: flicker 6s linear infinite;
+}
+h1 {
+  font-family: 'Sigmar One', sans-serif;
+  font-size: 4vw;
+  position: absolute;
+  top:90px;
+  left:190px;
+  line-height: 1;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #000000;
+  letter-spacing: .5rem;
+}
+h1:before {
+  content: attr(data-heading);
+  position: absolute;
+  overflow: hidden;
+  color: #ffcc00;
+  width: 100%;
+  z-index: 5;
+  text-shadow: none;
+  left: 27%;
+  text-align: left;
+  -webkit-animation: flicker 1s linear infinite;
+          animation: flicker 4s linear infinite;
+}
+
+@-webkit-keyframes flicker {
+  0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+    opacity: .99;
+    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.4), 1px -1px 0 rgba(255, 255, 255, 0.4), -1px 1px 0 rgba(255, 255, 255, 0.4), 1px 1px 0 rgba(255, 255, 255, 0.4), 0 -2px 8px, 0 0 2px, 0 0 5px #ff7e00, 0 0 15px #ff4444, 0 0 2px #ff7e00, 0 2px 3px #000;
+  }
+  20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+    opacity: 0.4;
+    text-shadow: none;
+  }
+}
+
+@keyframes flicker {
+  0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+    opacity: .99;
+    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.4), 1px -1px 0 rgba(255, 255, 255, 0.4), -1px 1px 0 rgba(255, 255, 255, 0.4), 1px 1px 0 rgba(255, 255, 255, 0.4), 0 -2px 8px, 0 0 2px, 0 0 5px #ff7e00, 0 0 15px #ff4444, 0 0 2px #ff7e00, 0 2px 3px #000;
+  }
+  20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+    opacity: 0.4;
+    text-shadow: none;
+  }
+}
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
