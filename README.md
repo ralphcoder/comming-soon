@@ -1,5 +1,5 @@
 # ralphcoder
-My portfolio website which is under construction 😅 😁.</br>
+My portfolio website which was under construction 😅 😁.</br>
 Hover/Click me on "Comming Soon" Test 😉 </br>
  </br>
 You Can have a visit at 👉 https://ralphcoder.github.io/
